@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<!-- package/name attribute should be any, that is not affected anywhere. -->
+<!-- package/namespace attribute contains same name of folder in which that will be declare in result attribute. -->
+<!-- extends its by default . Dont change it. -->
+<!-- action/name attribute contains name by which the  defined class will be called.-->
+<!-- action/class contains exactly same path where is Action class is defined. -->
+<!-- result attribute contains name on page will redirect along with folder name. -->
+<struts>
+    <package name="any" namespace="/page" extends="struts-default">
+        <action name="HelloWorldUrl" class="pkg.HelloWorldAction">
+            <result name="success">/page/HelloWorld.jsp</result>
+            <result name="error">/page/Error.jsp</result>
+        </action>
+    </package>
+</struts>
+
